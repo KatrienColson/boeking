@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="nl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="author" content="Carlos Colson & Katrien Colson" />
+		<meta name="keywords" content="boekingsformulier, vergaderzaal, kamers, luxekamer, familiekamer, tweepersoonskamer, business"/>
+		<meta name="description" content="Hotel Oude Eycke" />
+		<link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
+		<!-- Ion Icons JS Preload -->
+		<script type="module" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule="" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.js"></script>
+		<!-- Reset CSS -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+			integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+			crossorigin="anonymous"
+		/>
+		<!-- Normalize CSS -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+			integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+			crossorigin="anonymous"
+		/>
+		<!-- Recurring Styles -->
+		<link rel="stylesheet" href="css/main.css" />
+		<!-- Other Styling -->
+		<link rel="stylesheet" href="css/style.css" />
+		<!-- Form Styling -->
+		<link rel="stylesheet" href="css/formulier.css" />
+
+		<title>Boekingsformulier - Hotel Oude Eycke</title>
+	</head>
+	<body>
+		<header class="header-nav">
+			<div class="container-full">
+				<nav class="nav">
+					<ul class="nav-list">
+						<li class="nav-item">
+							<a href="#" class="nav-link">Reservaties</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">Bestellingen</a>
+						</li>
+						<li class="nav-item nav-logo">
+							<a href="http://www.oude-eycke.be/nl/geschiedenis/" target=_black><img src="img/logo-hotel.jpg" alt="logo hotel" /></a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">Betalingen</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">Identiteit</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<section class="boeking">
+			<div class="container">
+				<div class="row">
+					<div class="heading">
+                        <br><br>
+						<h1>Boekingsformulier</h1>
+					</div>
+					<div class="col-1">
+						<form id="formulier">
+							<fieldset class="personal-data">
+                                <legend>Persoonlijke gegevens</legend>
+                                <div class="form-group">
+									<label for="voornaam">Klantnr</label>
+									<input type="text" id="klantnummer" />
+								</div>
+								<div class="form-group">
+									<label for="voornaam">Voornaam</label>
+									<input type="text" id="voornaam" />
+								</div>
+								<div class="form-group">
+									<label for="achternaam">Achternaam</label>
+									<input type="text" id="achternaam" />
+									
+								</div>
+								<div class="form-group">
+									<label for="bedrijf">Bedrijf</label>
+									<input type="text" id="bedrijf" />
+									
+								</div>
+								<div class="form-group">
+									<label for="btw">BTW Nummer</label>
+									<input type="text" id="btw" />
+								
+								</div>
+								<div class="form-group">
+									<label for="straatnaam">Straat</label>
+									<input type="text" id="straatnaam" />
+                                </div>
+                                
+								<div class="form-group">
+									<label for="huisnummer">Huis Nr.<input type="text" id="huisnummer" />
+                                </div>
+                                
+								<div class="form-group">
+									<label for="postcode">Postcode</label><input type="text" id="postcode" />
+                                </div>
+                                
+								<div class="form-group">
+									<label for="plaatsnaam">Plaats</label>
+									<input type="text" id="plaatsnaam" />
+                                </div>
+                                
+								<div class="form-group">
+									<label for="land">Land</label>
+                                        <select id="country"  name="country">
+                                        <option value="AD">Andorra (Vorstendom)
+                                        <option value="AE">Verenigde Arabische Emiraten
+                                        <option value="AF">Afghanistan
+                                        <option value="AG">Antigua en Barbuda
+                                        <option value="AI">Anguilla
+                                        <option value="AL">Albanië
+                                        <option value="AM">Armenië (Republiek)
+                                        <option value="AO">Angola
+                                        <option value="AQ">Antarctica
+                                        <option value="AR">Argentinië
+                                        <option value="AS">Amerikaans-Samoa
+                                        <option value="AT">Oostenrijk
+                                        <option value="AU">Australië
+                                        <option value="AW">Aruba
+                                        <option value="AX">Åland
+                                        <option value="AZ">Azerbeidzjan (Republiek)
+                                        <option value="BA">Bosnië-Herzegovina (Republiek)
+                                        <option value="BB">Barbados
+                                        <option value="BD">Bangladesh
+                                        <option value="BE" selected >België
+                                        <option value="BF">Burkina Faso
+                                        <option value="BG">Bulgarije
+                                        <option value="BH">Bahrein
+                                        <option value="BI">Burundi
+                                        <option value="BJ">Benin (Republiek)
+                                        <option value="BL">Saint-Barthélemy
+                                        <option value="BM">Bermuda
+                                        <option value="BN">Brunei
+                                        <option value="BO">Bolivië
+                                        <option value="BQ">Bonaire, Sint Eustatius en Saba
+                                        <option value="BR">Brazilië
+                                        <option value="BS">Bahama's
+                                        <option value="BT">Bhutan
+                                        <option value="BV">Bouvet Eiland
+                                        <option value="BW">Botswana
+                                        <option value="BY">Belarus
+                                        <option value="BZ">Belize
+                                        <option value="CA">Canada
+                                        <option value="CC">Cocos
+                                        <option value="CD">Congo (Democratische Republiek)
+                                        <option value="CF">Centraal-Afrikaanse Republiek
+                                        <option value="CG">Congo (Volksrepubliek)
+                                        <option value="CH">Zwitserland
+                                        <option value="CI">Ivoorkust
+                                        <option value="CK">Cook
+                                        <option value="CL">Chili
+                                        <option value="CM">Kameroen
+                                        <option value="CN">China (Volksrepubliek)
+                                        <option value="CO">Colombia
+                                        <option value="CR">Costa Rica
+                                        <option value="CU">Cuba
+                                        <option value="CV">Kaapverdië (Republiek)
+                                        <option value="CW">Curaçao
+                                        <option value="CX">Christmaseiland
+                                        <option value="CY">Cyprus
+                                        <option value="CZ">Tsjechië (Tsjechische Republiek)
+                                        <option value="DE">Duitsland (Bondsrepubliek)
+                                        <option value="DJ">Djibouti (Republiek)
+                                        <option value="DK">Denemarken
+                                        <option value="DM">Dominica (Republiek)
+                                        <option value="DO">Dominicaanse Republiek
+                                        <option value="DZ">Algerije
+                                        <option value="EC">Ecuador
+                                        <option value="EE">Estland (Republiek)
+                                        <option value="EG">Egypte (Arabische Republiek)
+                                        <option value="EH">Westelijke Sahara
+                                        <option value="ER">Eritrea
+                                        <option value="ES">Spanje
+                                        <option value="ET">Ethiopië
+                                        <option value="FI">Finland
+                                        <option value="FJ">Fiji
+                                        <option value="FK">Falkland
+                                        <option value="FM">Micronesië (Federale Staten)
+                                        <option value="FO">Faeröer
+                                        <option value="FR">Frankrijk
+                                        <option value="GA">Gabon
+                                        <option value="GB">Verenigd Koninkrijk
+                                        <option value="GD">Grenada
+                                        <option value="GE">Georgië (Republiek)
+                                        <option value="GF">Frans-Guyana
+                                        <option value="GG">Guernsey
+                                        <option value="GH">Ghana
+                                        <option value="GI">Gibraltar
+                                        <option value="GL">Groenland
+                                        <option value="GM">Gambia
+                                        <option value="GN">Guinea
+                                        <option value="GP">Guadeloupe
+                                        <option value="GQ">Equatoriaal-Guinea
+                                        <option value="GR">Griekenland
+                                        <option value="GS">Zuid-Georgia en de Zuidelijke Sandwicheilanden
+                                        <option value="GT">Guatemala
+                                        <option value="GU">Guam
+                                        <option value="GW">Guinee-Bissau
+                                        <option value="GY">Guyana
+                                        <option value="HK">Hongkong
+                                        <option value="HM">Heard en McDonald
+                                        <option value="HN">Honduras
+                                        <option value="HR">Kroatië (Republiek)
+                                        <option value="HT">Haïti
+                                        <option value="HU">Hongarije (Republiek)
+                                        <option value="ID">Indonesië
+                                        <option value="IE">Ierland
+                                        <option value="IL">Israël
+                                        <option value="IM">Eiland Man
+                                        <option value="IN">India
+                                        <option value="IO">Brits Indische oceaan
+                                        <option value="IQ">Irak
+                                        <option value="IR">Iran
+                                        <option value="IS">IJsland
+                                        <option value="IT">Italië
+                                        <option value="JE">Jersey
+                                        <option value="JM">Jamaica
+                                        <option value="JO">Jordanië
+                                        <option value="JP">Japan
+                                        <option value="KE">Kenia
+                                        <option value="KG">Kirgizstan (Republiek)
+                                        <option value="KH">Cambodja (Koninkrijk)
+                                        <option value="KI">Kiribati (Republiek)
+                                        <option value="KM">Comoren (Unie)
+                                        <option value="KN">Sint-Kitts en Nevis (Federatie)
+                                        <option value="KP">Noord-Korea (Democratische Volksrepubliek)
+                                        <option value="KR">Zuid-Korea (Republiek)
+                                        <option value="KW">Koeweit
+                                        <option value="KY">Caymaneilanden
+                                        <option value="KZ">Kazachstan (Republiek)
+                                        <option value="LA">Laos
+                                        <option value="LB">Libanon
+                                        <option value="LC">Saint Lucia
+                                        <option value="LI">Liechtenstein
+                                        <option value="LK">Sri Lanka
+                                        <option value="LR">Liberia
+                                        <option value="LS">Lesotho
+                                        <option value="LT">Litouwen (Republiek)
+                                        <option value="LU">Luxemburg (Groot-Hertogdom)
+                                        <option value="LV">Letland (Republiek)
+                                        <option value="LY">Libië
+                                        <option value="MA">Marokko
+                                        <option value="MC">Monaco (Vorstendom)
+                                        <option value="MD">Moldavië (Republiek)
+                                        <option value="ME">Montenegro (Republiek)
+                                        <option value="MF">Sint-Maarten (Frans deel)
+                                        <option value="MG">Madagaskar (Democratische Republiek)
+                                        <option value="MH">Marshall (Republiek)
+                                        <option value="MK">Macedonië (Ex-Joegoslavische Republiek)
+                                        <option value="ML">Mali
+                                        <option value="MM">Myanmar (Unie)
+                                        <option value="MN">Mongolië (Volksrepubliek)
+                                        <option value="MO">Macao
+                                        <option value="MP">Noordelijke Marianen
+                                        <option value="MQ">Martinique
+                                        <option value="MR">Mauritanië (Islamitische Republiek)
+                                        <option value="MS">Montserrat
+                                        <option value="MT">Malta
+                                        <option value="MU">Mauritius
+                                        <option value="MV">Maldiven
+                                        <option value="MW">Malawi
+                                        <option value="MX">Mexico
+                                        <option value="MY">Maleisië
+                                        <option value="MZ">Mozambique
+                                        <option value="NA">Namibië
+                                        <option value="NC">Nieuw-Caledonië
+                                        <option value="NE">Niger
+                                        <option value="NF">Norfolk
+                                        <option value="NG">Nigeria (Federale Republiek)
+                                        <option value="NI">Nicaragua
+                                        <option value="NL">Nederland
+                                        <option value="NO">Noorwegen
+                                        <option value="NP">Nepal
+                                        <option value="NR">Nauru
+                                        <option value="NU">Niue
+                                        <option value="NZ">Nieuw-Zeeland
+                                        <option value="OM">Oman (Sultanaat)
+                                        <option value="PA">Panama
+                                        <option value="PE">Peru
+                                        <option value="PF">Frans-Polynesië
+                                        <option value="PG">Papoea-Nieuw-Guinea
+                                        <option value="PH">Filipijnen
+                                        <option value="PK">Pakistan
+                                        <option value="PL">Polen (Republiek)
+                                        <option value="PM">Saint-Pierre en Miquelon
+                                        <option value="PN">Pitcairn
+                                        <option value="PR">Puerto Rico
+                                        <option value="PS">Palestina
+                                        <option value="PT">Portugal
+                                        <option value="PW">Palau
+                                        <option value="PY">Paraguay
+                                        <option value="QA">Qatar
+                                        <option value="RE">Réunion
+                                        <option value="RO">Roemenië
+                                        <option value="RS">Servië (Republiek)
+                                        <option value="RU">Rusland (Federatie)
+                                        <option value="RW">Rwanda (Republiek)
+                                        <option value="SA">Saudi-Arabië
+                                        <option value="SB">Salomon
+                                        <option value="SC">Seychellen (Republiek)
+                                        <option value="SD">Soedan
+                                        <option value="SE">Zweden
+                                        <option value="SG">Singapore
+                                        <option value="SH">Saint Helena
+                                        <option value="SI">Slovenië (Republiek)
+                                        <option value="SJ">Spitsbergen en Jan Mayen
+                                        <option value="SK">Slowakije (Slovaakse Republiek)
+                                        <option value="SL">Sierra Leone
+                                        <option value="SM">San Marino (Republiek)
+                                        <option value="SN">Senegal
+                                        <option value="SO">Somalië (Republiek)
+                                        <option value="SR">Suriname
+                                        <option value="SS">Zuid-Soedan
+                                        <option value="ST">São Tomé en Principe (Democratische Republiek)
+                                        <option value="SV">El Salvador
+                                        <option value="SX">Sint Maarten (Nederlands deel)
+                                        <option value="SY">Syrië (Arabische Republiek)
+                                        <option value="SZ">Ngwane (Koninkrijk Swaziland)
+                                        <option value="TC">Turks- en Caicoseilanden
+                                        <option value="TD">Tsjaad
+                                        <option value="TF">Franse Zuidelijke Gebieden
+                                        <option value="TG">Togo
+                                        <option value="TH">Thailand
+                                        <option value="TJ">Tadzjikistan (Republiek)
+                                        <option value="TK">Tokelau
+                                        <option value="TL">Timor Leste
+                                        <option value="TM">Turkmenistan (Republiek)
+                                        <option value="TN">Tunesië
+                                        <option value="TO">Tonga
+                                        <option value="TR">Turkije
+                                        <option value="TT">Trinidad en Tobago
+                                        <option value="TV">Tuvalu
+                                        <option value="TW">Taiwan
+                                        <option value="TZ">Tanzania (Verenigde Republiek)
+                                        <option value="UA">Oekraïne (Republiek)
+                                        <option value="UG">Uganda
+                                        <option value="UM">Ver afgelegen eilandjes van de Verenigde Staten
+                                        <option value="US">Verenigde Staten van Amerika
+                                        <option value="UY">Uruguay
+                                        <option value="UZ">Oezbekistan (Republiek)
+                                        <option value="VA">Heilige Stoel
+                                        <option value="VC">Saint Vincent en de Grenadines
+                                        <option value="VE">Venezuela
+                                        <option value="VG">Britse Maagdeneilanden
+                                        <option value="VI">Amerikaanse Maagdeneilanden
+                                        <option value="VN">Vietnam (Socialistische Republiek)
+                                        <option value="VU">Vanuatu (Republiek)
+                                        <option value="WF">Wallis en Futuna
+                                        <option value="WS">Samoa
+                                        <option value="YE">Jemen (Republiek)
+                                        <option value="YT">Mayotte
+                                        <option value="ZA">Zuid-Afrika (Republiek)
+                                        <option value="ZM">Zambia
+                                        <option value="ZW">Zimbabwe
+                                        </select>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="kamertype">Taal</label>
+                                    <select  name="language">
+                                        <option value="1550">Duits
+                                        <option value="1834">Engels
+                                        <option value="1948">Frans
+                                        <option value="4692" selected >Nederlands
+                                    </select>
+                                </div>
+
+								<div class="form-group">
+									<label for="telefoon">Tel/GSM Nr</label>
+									<input type="text" id="telefoon" />
+					
+								</div>
+								<div class="form-group">
+									<label for="email">Email</label>
+									<input type="text" id="email" />
+				
+								</div>
+							</fieldset>
+
+							<fieldset class="voorkeuren">
+								<legend>Boekingsvoorkeuren</legend>
+								<div class="form-group">
+									<label for="aankomstDatum">Aankomst datum</label>
+									<input type="date" id="aankomstDatum" />
+                                </div>
+                                
+								<div class="form-group">
+									<label for="vertrekDatum">Vertrek datum</label>
+									<input type="date" id="vertrekDatum" />
+                                </div>
+                                
+								<div class="form-group">
+									<label for="soortKamer">Soort kamer</label>
+									<select id="soortKamer" name="soortKamer">
+                                        <option value="1">Kamer A
+                                        <option value="2">Kamer B1
+                                        <option value="3">Kamer B2
+                                        <option value="4">Kamer B10
+                                        <option value="5">Kamer B11
+                                        <option value="6">Kamer C1
+                                        <option value="-" selected>-</option>
+                                        <option value="7">Kamer C2
+                                        <option value="8">Kamer C10
+                                        <option value="9">Kamer C11
+                                        <option value="10">Kamer D
+                                        <option value="11">Grote Zaal
+                                        <option value="15">Ontbijtkamer
+                                        <option value="16">Cadeaucheque
+									</select>
+                                </div>
+                                    
+                                <div class="form-group">
+                                    <label for="kamertype">Kamertype</label>
+                                    <select  name="roomtype">
+                                        <option value="1" selected >Tweepersoonskamer
+                                        <option value="2">Beperkingskamer
+                                        <option value="3">Luxe tweepersoonskamer
+                                        <option value="4">Appartement
+                                        <option value="5">Andere
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group">
+									<label for="plaatsnaam">Reservatie</label>
+									<input type="text" id="reservatie" size=16 name="creation" value="2021-01-25 14:24" />
+                                </div>
+                                
+                                <div class="form-group">
+									<label for="plaatsnaam">van</label>
+									<input type="text" id="dstart" size=16 name="dstart" value="2021-02-01 14:00" />
+                                </div>
+
+                                <div class="form-group">
+									<label for="plaatsnaam">tot</label>
+									<input type="text" id="dend" size=16 name="dend" value="2021-03-19 11:00" />
+                                </div>
+
+                                <div class="form-group">
+									<label for="plaatsnaam">Check in</label>
+									<input type="text" id="checkin" size=16 name="checkin" value="2021-02-01 20:26" />
+                                </div>
+                                    
+                                <div class="form-group">
+									<label for="plaatsnaam">Check Out</label>
+									<input type="text" id="checkout" size=16 name="checkout" value="" />
+                                </div>
+                            </fieldset>
+
+
+                            <fieldset class="voorkeuren">
+                                <legend>Aantal personen</legend>
+                                    <div class="form-group">
+                                        <label for="aantalPersonen">Aantal personen</label>
+                                        <input type="text" id="aantalPersonen" />
+                                    </div>
+								    <div class="form-group">
+                                        <label for="aantalKinderen">Aantal kinderen</label>
+                                        <input type="text" id="aantalKinderen" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="purpose" name="purpose">Doel</label>
+                                        <select  name="purpose">
+                                            <option value="1" selected >Ontspanning,vakantie
+                                            <option value="2">conferentie, congres, seminarie
+                                            <option value="3">andere beroepsdoeleinden
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="origin" name="purpose">Bron</label>
+                                        <select  name="origin">
+                                            <option value="1">Booking
+                                            <option value="2">Telefonisch
+                                            <option value="3">E-mail
+                                            <option value="4">Receptie
+                                        </select>
+                                    </div>
+                            </fieldset>
+                            
+                            <fieldset class="voorkeuren">
+                                <legend>Totalen</legend>
+                                    <div class="form-group">
+                                        <label for="totaal">Totaal</label>
+                                        <input type="text" id="totaal" name='totaal' value="2852" />
+                                    </div>
+								    <div class="form-group">
+                                        <label for="voorschot">Voorschot</label>
+                                        <input type="text" id="voorschot" name="prepaiment" value="1000" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="nr">Nummer</label>
+                                        <input type="text" id="nr" name="nr" value="9081" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="groupnr">Groepnr</label>
+                                        <input type="text" id="groupnr" name="groupnr" value="9076" />
+                                    </div>
+                            </fieldset>
+                            <fieldset class="extra-info">
+                                <legend>Extra info</legend>
+								<div class="form-group">
+									<label for="extraInfo">Geef hier extra info in</label>
+									<br />
+									<textarea class="textarea" id="extraInfo"></textarea>
+								</div>
+							</fieldset>
+
+							<fieldset class="voorwaarden">
+								<legend>Knoppen</legend>
+								<div class="form-group">
+                                    <input type="button" value="Cancelled" id="knop_verstuur" onclick="cancelled_boeking()" />
+								</div>
+								<div class="form-group">
+									<input type="button" value="Optie" id="knop_verstuur" onclick="optie_boeking()" />
+                                </div>
+                                <div class="form-group">
+									<input type="button" value="Gereserveerd" id="knop_verstuur" onclick="gereserveerd_boeking()" />
+                                </div>
+                                <div class="form-group">
+									<input type="button" value="Ingechecked" id="knop_verstuur" onclick="ingeschecked_boeking()" />
+                                </div>
+                                <div class="form-group">
+									<input type="button" value="Uitgechecked" id="knop_verstuur" onclick="uitgechecked_boeking()" />
+                                </div>
+                                <div class="form-group">
+									<input type="button" value="Onderhoud" id="knop_verstuur" onclick="onderhoud_boeking()" />
+                                </div>
+                                <div class="form-group">
+									<input type="button" value="Opslaan" id="knop_verstuur" onclick="opslaan_boeking()" />
+                                </div>
+                                <div class="form-group">
+									<input type="button" value="Sluiten" id="knop_verstuur" onclick="sluiten_boeking()" />
+                                </div>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-3">
+					
+					</div>
+					<div class="col-3 footer-image">
+						<img src="./img/logo-hotel.jpg" alt="logo hotel" />
+					</div>
+					<div class="col-3">
+					
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</body>
+</html>

@@ -1,0 +1,390 @@
+/* Variabele Kleuren */
+/* Variabele Kleuren */
+/* Variabele Kleuren */
+
+:root {
+	--blauw: #242a36;
+	--lichtblauw: #3d465a;
+	--goud: #bda76e;
+	--lichtgoud: #f5e3b5;
+	--wit: #fbfbfb;
+}
+
+/* Homepage */
+/* Homepage */
+/* Homepage */
+
+/* Welkom Sectie Homepage */
+/* Welkom Sectie Homepage */
+/* Welkom Sectie Homepage */
+
+.welkom {
+	margin: -1.5rem 0rem;
+	width: 100vw;
+	background: url(../images/background-pattern-gold.jpg);
+}
+
+.welkom:focus {
+	border: none;
+}
+
+.welkom .container {
+	padding: 10rem 5rem;
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+
+.welkom-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.welkom-container h2 {
+	margin: 0px 0px 50px 0px;
+}
+
+/* Banner Sectie Homepage */
+/* Banner Sectie Homepage */
+/* Banner Sectie Homepage */
+
+.content-banner-wrapper {
+	width: 100vw;
+}
+
+.content-banner {
+	position: relative;
+	margin: -1.5rem 0rem;
+	height: 400px;
+	background: url(../images/background.jpg);
+	background-size: cover;
+	background-position: center;
+	z-index: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.content-banner:before {
+	content: "";
+	position: absolute;
+	top: 0px;
+	left: 0;
+	width: 100%;
+	height: 400px;
+	background-image: linear-gradient(120deg, var(--blauw), var(--goud));
+	opacity: 0.7;
+	z-index: 1;
+}
+
+.content-banner h2 {
+	text-align: center;
+	z-index: 2;
+	color: var(--wit);
+	padding: 0px 25px;
+}
+
+.feestdagen {
+	font-family: "Marcellus", serif, "Arial", sans-serif;
+	color: #bda76e;
+	font-weight: 100;
+	font-size: 2em;
+}
+
+.feestdagen .letter {
+	display: inline-block;
+	line-height: 1em;
+}
+
+/* Kamers Sectie Homepage */
+/* Kamers Sectie Homepage */
+/* Kamers Sectie Homepage */
+
+.kamers .container {
+	padding: 10rem 2rem;
+}
+
+.kamers .container h2 {
+	margin-bottom: 25px;
+}
+
+.kamer-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.kamer-container h2 {
+	color: var(--blauw);
+	font-size: 2.8rem;
+	margin-bottom: 15px;
+}
+
+.kamer-container .boeken-button {
+	border: none;
+	background-color: var(--blauw);
+	color: var(--wit);
+	text-align: center;
+	width: 100%;
+	margin-top: 20px;
+	padding: 15px 30px;
+	transition: all 0.3s ease-in-out;
+	cursor: pointer;
+}
+
+.kamer-container .boeken-button:hover {
+	background-color: var(--lichtblauw);
+	color: var(--wit);
+}
+
+/* EINDE HOMEPAGE */
+/* EINDE HOMEPAGE */
+/* EINDE HOMEPAGE */
+/* EINDE HOMEPAGE */
+/* EINDE HOMEPAGE */
+/* EINDE HOMEPAGE */
+
+/* KAMERS.HTML */
+/* KAMERS.HTML */
+/* KAMERS.HTML */
+
+.boeken-form h1 {
+	color: var(--goud);
+	font-family: "Poppins", sans-serif;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 3rem;
+	margin: 0;
+	padding-bottom: 0px;
+}
+
+.tweepersoonskamer {
+	margin-top: -15px;
+	padding: 50px 0px;
+	background-color: var(--wit);
+}
+
+.luxekamer {
+	padding: 50px 0px;
+	background-color: var(--blauw);
+	color: white;
+}
+
+.familiekamer {
+	padding: 50px 0px;
+	background-color: var(--wit);
+}
+
+.button-center {
+	display: flex;
+	justify-content: center;
+}
+
+.kamer-boeken-button {
+	border: none;
+	background-color: var(--blauw);
+	color: var(--wit);
+	padding: 15px 45px;
+	transition: all 0.3s ease-in-out;
+	cursor: pointer;
+}
+
+.kamer-boeken-button:hover {
+	background-color: var(--lichtblauw);
+}
+
+.luxekamer .kamer-boeken-button {
+	background-color: var(--goud);
+	color: var(--wit);
+}
+
+.luxekamer .kamer-boeken-button:hover {
+	background-color: var(--lichtgoud);
+	color: var(--wit);
+}
+
+.luxekamer .heading:after {
+	border-bottom: 2px solid rgba(240, 240, 240, 0.3);
+}
+
+.luxekamer ul li {
+	color: rgb(192, 192, 192);
+}
+
+/* Styling 2 Persoonskamer */
+
+.kamer-1 h4 {
+	font-family: "Poppins", sans-serif;
+}
+
+/* Styling Luxekamer */
+
+.kamer-2 h4 {
+	font-family: "Poppins", sans-serif;
+	color: var(--goud);
+}
+
+.kamer-2 p {
+	color: rgb(216, 216, 216);
+}
+
+/* Styling Familiekamer */
+
+.kamer-3 h4 {
+	font-family: "Poppins", sans-serif;
+}
+
+/* Slider Styling */
+
+.splide__slide {
+	margin: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 550px;
+}
+
+.splide__slide img {
+	height: 480px;
+	transition: height 0.5s ease;
+}
+
+.splide__slide.is-active {
+	height: 550px;
+}
+
+.splide__slide.is-active img {
+	height: 550px;
+}
+
+@media screen and (max-width: 1080px) {
+	.splide__slide {
+		height: 400px;
+	}
+
+	.splide__slide img {
+		height: 350px;
+	}
+
+	.splide__slide.is-active {
+		height: 400px;
+	}
+
+	.splide__slide.is-active img {
+		height: 400px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.splide__slide {
+		height: 350px;
+	}
+
+	.splide__slide img {
+		height: 350px;
+	}
+
+	.splide__slide.is-active {
+		height: 350px;
+	}
+
+	.splide__slide.is-active img {
+		height: 350px;
+	}
+}
+
+/* ----------------- */
+/* ----------------- */
+/* VERGADERZAAL.HTML */
+/* ----------------- */
+/* ----------------- */
+
+/* ----------------- */
+/* ----------------- */
+/* KAMER-BOEKEN.HTML */
+/* ----------------- */
+/* ----------------- */
+
+/* Geen styling nodig */
+
+/* ------------ */
+/* ------------ */
+/* CONTACT.HTML */
+/* ------------ */
+/* ------------ */
+
+.contact-moreinfo iframe {
+	margin: 35px 0px 15px 0px;
+}
+
+.contact-moreinfo h2 {
+	font-family: "Poppins", sans-serif;
+	font-weight: bold;
+	font-size: 2rem;
+}
+
+.facebook-icon {
+	width: 50px;
+	height: 50px;
+	max-width: initial;
+	min-width: initial;
+	min-height: initial;
+	background-color: var(--blauw);
+	border-radius: 3px;
+	padding: 10px;
+	color: white;
+	cursor: pointer;
+}
+
+.twitter-icon {
+	width: 50px;
+	height: 50px;
+	max-width: initial;
+	min-width: initial;
+	min-height: initial;
+	background-color: var(--blauw);
+	border-radius: 3px;
+	padding: 10px;
+	color: white;
+	cursor: pointer;
+}
+
+.instagram-icon {
+	width: 50px;
+	height: 50px;
+	max-width: initial;
+	min-width: initial;
+	min-height: initial;
+	background-color: var(--blauw);
+	border-radius: 3px;
+	padding: 10px;
+	color: white;
+	cursor: pointer;
+}
+
+.contact-moreinfo iframe {
+	width: 100%;
+	height: 300px;
+	border: 0;
+}
+
+.contact-moreinfo a {
+	color: var(--blauw);
+	transition: color 0.3s ease;
+}
+
+.contact-moreinfo a:hover {
+	color: var(--goud);
+}
+
+/* ---------------- */
+/* ---------------- */
+/* Voorwaarden.HTML */
+/* ---------------- */
+/* ---------------- */
+
+.voorwaardenpagina {
+	padding: 50px 0px;
+}
