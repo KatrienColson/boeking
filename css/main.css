@@ -126,15 +126,6 @@ img {
 	border: none;
 }
 
-.header-content-banner {
-	width: 100vw;
-	min-height: 350px;
-	max-height: 350px;
-	object-fit: cover;
-	position: relative;
-	top: 10px;
-}
-
 /* Buttons */
 
 .button-light {
@@ -251,19 +242,6 @@ img {
 	transition: background 0.2s ease;
 }
 
-/* html:not([data-scroll="0"]) .header-nav {
-	height: initial;
-}
-
-html:not([data-scroll="0"]) .header-nav .container-full {
-	background: var(--blauw);
-}
-
-html:not([data-scroll="0"]) .nav-logo img {
-	width: 60px;
-	min-width: 60px;
-	height: auto;
-} */
 
 /* MOBILE MENU */
 /* MOBILE MENU */
@@ -317,169 +295,6 @@ html:not([data-scroll="0"]) .nav-logo img {
 	color: var(--goud);
 }
 
-/* Hero in header styling */
-/* Hero in header styling */
-/* Hero in header styling */
-
-/* .header-content {
-	width: 100vw;
-	position: relative;
-	bottom: 15px;
-}
-
-.header-content video {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100vw;
-	height: 100vh;
-	object-fit: cover;
-	z-index: -2;
-}
-
-.hero {
-	width: 100%;
-	height: 90vh;
-	background-size: cover;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-	position: relative;
-	z-index: 0;
-}
-
-.hero::before {
-	content: " ";
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: inherit;
-	height: inherit;
-	background-color: rgba(36, 42, 54, 0.5);
-	z-index: -1;
-}
-
-.header-text {
-	color: var(--wit);
-	line-height: 1;
-	text-shadow: 1px 1px 1rem rgba(0, 0, 0, 0.5);
-}
-
-.header-text .title {
-	font-family: "Poppins", sans-serif;
-	font-size: 4.8rem;
-	font-weight: 600;
-	color: var(--wit);
-	text-transform: uppercase;
-	margin: 0.5rem;
-}
-
-.header-text .subtitle {
-	font-size: 3.6rem;
-	font-weight: 300;
-	color: var(--wit);
-	margin: 0.5rem;
-	font-style: italic;
-} */
-
-/* .button-hero {
-	margin-top: 50px;
-	background-color: var(--goud);
-	transition: background-color 0.3s ease-in-out;
-}
-
-.button-hero:hover {
-	background-color: var(--blauw);
-} */
-
-/* Banner BOEKEN */
-/* Banner BOEKEN */
-/* Banner BOEKEN */
-
-.kamer-boeken {
-	height: 12vh;
-	background-color: var(--blauw);
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.kamer-boeken .container {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-around;
-}
-
-.kamer-boeken h2 {
-	color: var(--goud);
-	font-family: "Poppins", sans-serif;
-	text-transform: uppercase;
-	font-weight: 600;
-	font-size: 30px;
-	margin: 0;
-	padding-bottom: 0px;
-	position: relative;
-	top: 5px;
-}
-
-.kamer-boeken .input-group {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	position: relative;
-	bottom: 9px;
-}
-
-.kamer-boeken .input-group input[type="date"] {
-	min-width: 180px;
-	border: none;
-	border: 1px solid var(--goud);
-	height: 45px;
-	background-color: rgba(0, 0, 0, 0);
-	color: grey;
-	text-align: center;
-}
-
-.kamer-boeken .input-group input[type="date"]::-webkit-calendar-picker-indicator {
-	filter: invert() brightness(50%);
-}
-
-/* .kamer-boeken .boeken-form {
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
-.kamer-boeken .boeken-form a {
-	position: relative;
-	top: 5px;
-	padding: 11.5px 25px;
-}
-
-.kamer-boeken label {
-	display: block;
-	margin-bottom: 0.5rem;
-	padding: 0px 8px;
-	background-color: var(--blauw);
-	color: var(--goud);
-	position: relative;
-	top: 13px;
-}
-
-.kamer-boeken .button-beschikbaarheid {
-	background-color: var(--goud);
-	color: var(--wit);
-	transition: color 0.2s ease-in-out;
-	padding: 25px 30px;
-} */
-
-/* .kamer-boeken .button-beschikbaarheid:hover {
-	color: var(--blauw);
-} */
-
 
 
 /* Footer */
@@ -510,24 +325,9 @@ html:not([data-scroll="0"]) .nav-logo img {
 /* Media Queries */
 /* Media Queries */
 
-/* Verwijder BOEKING-BANNER wanneer hij niet meer past */
 
 @media screen and (max-width: 1270px) {
-	.kamer-boeken {
-		display: none;
-	}
-
-	.hero {
-		height: 100vh;
-	}
-
-	.kamer-boeken {
-		display: none;
-	}
-
-	.hero {
-		height: 100vh;
-	}
+	
 }
 
 /* Menu voor Desktop - CSS */

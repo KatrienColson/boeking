@@ -26,8 +26,6 @@
 		/>
 		<!-- Recurring Styles -->
 		<link rel="stylesheet" href="css/main.css" />
-		<!-- Other Styling -->
-		<link rel="stylesheet" href="css/style.css" />
 		<!-- Form Styling -->
 		<link rel="stylesheet" href="css/formulier.css" />
 
@@ -67,6 +65,7 @@
 					</div>
 					<div class="col-1">
 						<form id="formulier">
+<!--PERSOONLIJKE GEGEVENS-->                            
 							<fieldset class="personal-data">
                                 <legend>Persoonlijke gegevens</legend>
                                 <div class="form-group">
@@ -98,7 +97,8 @@
                                 </div>
                                 
 								<div class="form-group">
-									<label for="huisnummer">Huis Nr.<input type="text" id="huisnummer" />
+                                    <label for="huisnummer">Huis Nr.</label>
+                                    <input type="text" id="huisnummer" />
                                 </div>
                                 
 								<div class="form-group">
@@ -383,10 +383,9 @@
 								<div class="form-group">
 									<label for="email">Email</label>
 									<input type="text" id="email" />
-				
 								</div>
 							</fieldset>
-
+<!--BOEKINGSVOORKEUREN-->
 							<fieldset class="voorkeuren">
 								<legend>Boekingsvoorkeuren</legend>
 								<div class="form-group">
@@ -455,8 +454,7 @@
 									<input type="text" id="checkout" size=16 name="checkout" value="" />
                                 </div>
                             </fieldset>
-
-
+<!--AANTAL PERSONEN-->
                             <fieldset class="voorkeuren">
                                 <legend>Aantal personen</legend>
                                     <div class="form-group">
@@ -475,7 +473,6 @@
                                             <option value="3">andere beroepsdoeleinden
                                         </select>
                                     </div>
-
                                     <div class="form-group">
                                         <label for="origin" name="purpose">Bron</label>
                                         <select  name="origin">
@@ -486,7 +483,7 @@
                                         </select>
                                     </div>
                             </fieldset>
-                            
+<!--TOTAAL-->                          
                             <fieldset class="voorkeuren">
                                 <legend>Totalen</legend>
                                     <div class="form-group">
@@ -514,7 +511,7 @@
 									<textarea class="textarea" id="extraInfo"></textarea>
 								</div>
 							</fieldset>
-
+<!--KNOPPEN-->
 							<fieldset class="voorwaarden">
 								<legend>Knoppen</legend>
 								<div class="form-group">
@@ -547,8 +544,7 @@
 				</div>
 			</div>
 		</section>
-
-
+<!--FOOTER-->
 		<footer class="footer">
 			<div class="container">
 				<div class="row">

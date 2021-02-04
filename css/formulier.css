@@ -1,7 +1,10 @@
+
 :root {
 	--blauw: #242a36;
+	--lichtblauw: #3d465a;
 	--goud: #bda76e;
-	--wit: #ffffff;
+	--lichtgoud: #f5e3b5;
+	--wit: #fbfbfb;
 }
 
 /* Stijlen van auto-fill wegfilteren */
@@ -58,14 +61,14 @@ legend {
 	flex-direction: column;
 }
 
-.voorwaarden a {
+/* .voorwaarden a {
 	color: var(--goud);
 	transition: color 0.3s ease;
 }
 
 .voorwaarden a:hover {
 	color: var(--lichtgoud);
-}
+} */
 
 /* Form groups */
 /* Form groups */
@@ -80,7 +83,7 @@ legend {
 	flex-basis: 31%;
 	flex-grow: 1;
 }
-
+/* 
 .form-group.alt-form {
 	display: flex;
 	flex-direction: column;
@@ -88,7 +91,7 @@ legend {
 	margin: 8px 1%;
 	color: var(--blauw);
 	flex-basis: 100%;
-}
+} */
 
 .extra-info .form-group {
 	display: initial;
@@ -154,7 +157,7 @@ legend {
 	border: 1px solid var(--blauw);
 	background-color: var(--wit);
 	color: var(--blauw);
-	height: 45px;
+	height: 30px;
 }
 
 .form-group input[type="date"] {
@@ -166,7 +169,7 @@ legend {
 	border: 1px solid var(--blauw);
 	background-color: var(--wit);
 	color: var(--blauw);
-	height: 45px;
+	height: 30px;
 }
 
 .form-group select {
@@ -178,7 +181,7 @@ legend {
 	border: 1px solid var(--blauw);
 	background-color: var(--wit);
 	color: var(--blauw);
-	height: 45px;
+	height: 30px;
 }
 
 .extra-info .textarea {
@@ -202,14 +205,14 @@ legend {
 
 .voorwaarden .form-group input[type="button"] {
 	font-family: "Poppins", sans-serif;
-	font-size: 15px;
+	font-size: 12px;
 	font-weight: bold;
 	text-transform: uppercase;
 	background-color: var(--blauw);
 	color: #fbfbfb;
 	cursor: pointer;
 	border: none;
-	padding: 15px 30px;
+	padding: 15px 20px;
 	transition: all 0.3s ease-in-out 0s;
 }
 
