@@ -240,6 +240,7 @@ img {
 	margin: 0 auto;
 	background: linear-gradient(180deg, rgba(36, 42, 54, 1) 0%, rgba(36, 42, 54, 1) 65%, rgba(36, 42, 54, 0) 100%);
 	transition: background 0.2s ease;
+	
 }
 
 
@@ -317,7 +318,7 @@ img {
 
 .footer-image img {
 	width: 120px;
-	opacity: 0.7;
+	/* opacity: 0.7; */
 }
 
 
